@@ -14,6 +14,8 @@
   --first-background-color: #ffffff;
   --second-background-color: #2f303a;
   --third-background-color: #f5f4fa;
+  --first-icon-color: #afb1b8;
+  --second-icon-color: #ffffff;
 }
 
 body {
@@ -79,6 +81,40 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-title-color);
   margin-bottom: 50px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--second-icon-color);
 }
 
 /*------HEADER------ */
@@ -171,6 +207,15 @@ body {
 
 .hero {
   background-color: var(--second-background-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -230,6 +275,22 @@ body {
   margin-right: 30px;
 }
 
+.features-bg-icon {
+  width: 270px;
+  height: 120px;
+  background-color: var(--third-background-color);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
+
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -287,6 +348,15 @@ body {
   padding-bottom: 30px;
 }
 
+.team-social-link {
+  background-color: var(--first-background-color);
+  color: var(--first-icon-color);
+}
+
+.team-social-icon {
+  fill: currentColor;
+}
+
 .team-item-title {
   font-weight: 500;
   font-size: 16px;
@@ -302,6 +372,7 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 /*------FOOTER------*/

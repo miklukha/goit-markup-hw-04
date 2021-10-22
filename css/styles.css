@@ -169,13 +169,13 @@ body {
   margin-left: auto;
 }
 
-.contacts-item {
-  display: flex;
-  align-items: center;
-}
-
 .contacts-item:hover {
   color: var(--accent-color);
+}
+
+.contacts-link {
+  display: flex;
+  align-items: center;
 }
 
 .icon-mail,

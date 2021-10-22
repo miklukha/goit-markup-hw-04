@@ -16,6 +16,7 @@
   --third-background-color: #f5f4fa;
   --first-icon-color: #afb1b8;
   --second-icon-color: #ffffff;
+  --icon-background-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -85,7 +86,6 @@ body {
 
 .social-list {
   display: flex;
-  justify-content: center;
 }
 
 .social-item {
@@ -95,11 +95,6 @@ body {
 
 .social-item:not(:last-child) {
   margin-right: 10px;
-}
-
-.social-icon {
-  width: 20px;
-  height: 20px;
 }
 
 .social-link {
@@ -115,6 +110,11 @@ body {
 .social-link:focus {
   background-color: var(--accent-color);
   color: var(--second-icon-color);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /*------HEADER------ */
@@ -346,6 +346,10 @@ body {
   padding-bottom: 30px;
 }
 
+.team-social-list {
+  justify-content: center;
+}
+
 .team-social-link {
   background-color: var(--first-background-color);
   color: var(--first-icon-color);
@@ -415,6 +419,15 @@ body {
   padding-bottom: 60px;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-left {
+  margin-right: 70px;
+}
+
 .footer-logo {
   display: block;
   margin-bottom: 20px;
@@ -438,6 +451,26 @@ body {
 
 .address-contacts {
   color: var(--contacts-color);
+}
+
+.footer-text {
+  font-weight: 700px;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-text-color);
+
+  margin-bottom: 20px;
+}
+
+.footer-social-link {
+  color: var(--second-icon-color);
+  background-color: var(--icon-background-color);
+}
+
+.footer-social-icon {
+  fill: currentColor;
 }
 
 /*PORTFOLIO*/

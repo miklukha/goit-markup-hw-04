@@ -105,6 +105,10 @@ body {
   display: flex;
 }
 
+.nav-item {
+  display: flex;
+}
+
 .nav-item:not(:last-child),
 .contacts-item:not(:last-child) {
   margin-right: 50px;
@@ -116,13 +120,12 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-link {
   color: var(--third-text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: block;
 }
 
 .contacts-list {
@@ -130,15 +133,33 @@ body {
   margin-left: auto;
 }
 
-.contacts-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
+.contacts-item {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-item:hover {
+  color: var(--accent-color);
+}
+
+.icon-mail,
+.icon-phone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+}
+
+.icon-phone {
+  width: 10px;
+  height: 16px;
 }
 
 .nav-link:hover,
-.nav-link:focus,
-.contacts-link:hover,
-.contacts-link:focus {
+.nav-link:focus {
   color: var(--accent-color);
 }
 

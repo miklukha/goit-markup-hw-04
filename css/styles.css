@@ -281,9 +281,7 @@ body {
   background-color: var(--third-background-color);
   margin-bottom: 30px;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 25px 100px;
 }
 
 .features-icon {
@@ -373,6 +371,41 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
+}
+
+/*------CLIENTS------*/
+
+.clients-list {
+  display: flex;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  color: var(--first-icon-color);
+  padding: 16px 32px;
+  display: block;
+  border: 1px solid var(--first-icon-color);
+  border-radius: 4px;
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /*------FOOTER------*/

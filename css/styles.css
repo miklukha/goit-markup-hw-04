@@ -164,18 +164,28 @@ body {
   color: var(--third-text-color);
 }
 
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+.current-link {
+  color: var(--accent-color);
+}
+
 .contacts-list {
   display: flex;
   margin-left: auto;
 }
 
-.contacts-item:hover {
-  color: var(--accent-color);
-}
-
 .contacts-link {
   display: flex;
   align-items: center;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
 }
 
 .icon-mail,
@@ -192,15 +202,6 @@ body {
 .icon-phone {
   width: 10px;
   height: 16px;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--accent-color);
-}
-
-.current-link {
-  color: var(--accent-color);
 }
 
 /*------HERO------*/
@@ -281,7 +282,9 @@ body {
   background-color: var(--third-background-color);
   margin-bottom: 30px;
   border-radius: 4px;
-  padding: 25px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .features-icon {
@@ -454,7 +457,7 @@ body {
 }
 
 .footer-text {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.03em;
@@ -530,6 +533,13 @@ body {
 
 .works-link {
   color: inherit;
+  display: block;
+}
+
+.works-link:hover,
+.works-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .works-item-description {

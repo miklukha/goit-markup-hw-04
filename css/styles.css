@@ -277,7 +277,6 @@ body {
 }
 
 .features-bg-icon {
-  width: 270px;
   height: 120px;
   background-color: var(--third-background-color);
   margin-bottom: 30px;
@@ -397,8 +396,11 @@ body {
 
 .clients-link {
   color: var(--first-icon-color);
-  padding: 16px 32px;
-  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--first-icon-color);
   border-radius: 4px;
 }
